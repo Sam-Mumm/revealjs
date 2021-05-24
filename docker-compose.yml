@@ -1,0 +1,11 @@
+version: '2'
+services:
+  revealjs:
+    container_name: revealjs
+    image: reveal:405
+    ports:
+      - 8000:8000
+    volumes:
+      - './index.html:/reveal.js/index.html'
+      - './slides.md:/reveal.js/slides.md'
+      - './assets:/reveal.js/assets'
